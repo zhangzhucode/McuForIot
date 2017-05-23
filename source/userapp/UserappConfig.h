@@ -9,11 +9,13 @@
 #include "DebugTask.h"
 #include "MPU6050Task.h"
 #include "ledstask.h"
+#include "usb_mcuflash_task.h"
 
-#define	 CONFIG_DEBUG       1   // 1 添加 0取消  
-#define	 CONFIG_LEDS        1  // 1 添加 0取消  
-#define	 CONFIG_LCD5110     0   // 1 添加 0取消  
-#define	 CONFIG_MPU6050     0   // 1 添加 0取消  
+#define	    CONFIG_DEBUG       1   // 1 添加 0取消  
+#define	    CONFIG_LEDS        1   // 1 添加 0取消  
+#define	    CONFIG_LCD5110     0   // 1 添加 0取消  
+#define	    CONFIG_MPU6050     0   // 1 添加 0取消  
+#define     CONFIG_USBMCUFLASH 1   // 1 添加 0取消  
 
 extern void AppCreate(void);
 

@@ -29,6 +29,11 @@ static  INT32U STK_LCD5110Task[APP_TASK_STK_SIZE];
 #define MPU6050Task_PRI		 	18 	
 static  INT32U STK_MPU6050Task[APP_TASK_STK_SIZE];
 #endif
+
+#if CONFIG_USBMCUFLASH
+#define USB_McuFlashTask_PRI		 	19 	
+static  INT32U STK_USB_McuFlashTask[APP_TASK_STK_SIZE];
+#endif
 /*****************************************************/
 
 /***************************************************************************************
@@ -65,6 +70,11 @@ void AppCreate(void)
 	OSTaskCreate(MPU6050Task, (void *)0,(OS_STK *)&STK_MPU6050Task[APP_TASK_STK_SIZE-1],MPU6050Task_PRI);
 #endif 
 
+
+#if CONFIG_USBMCUFLASH
+OSTaskCreate(USB_McuFlashTask, (void *)0,(OS_STK *)&STK_USB_McuFlashTask[APP_TASK_STK_SIZE-1],USB_McuFlashTask_PRI);
+
+#endif
 }
 
 

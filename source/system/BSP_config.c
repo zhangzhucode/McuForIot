@@ -25,7 +25,7 @@ void Bsp_RS232_Initialise(void);
 
 void Bsp_Configuration(void)
 {   
-   	//SystemInit();	
+   	SystemInit();	
 
     RCC_Configuration();
     NVIC_Configuration();

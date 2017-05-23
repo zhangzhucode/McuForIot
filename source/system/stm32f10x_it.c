@@ -27,6 +27,11 @@
 #include "ucos_ii.h"
 #include "UserappConfig.h"
 
+#include "usb_istr.h"
+#include "usb_lib.h"
+#include "usb_pwr.h"
+#include "platform_config.h"
+
 /** @addtogroup STM32F10x_StdPeriph_Examples
   * @{
   */
@@ -168,6 +173,34 @@ void TIM2_IRQHandler(void)     //中断周期10ms
         OS_EXIT_CRITICAL();          //退出临界段            	
    }
    OSIntExit(); 
+}
+
+
+
+/*******************************************************************************
+* Function Name  : USB_HP_CAN1_TX_IRQHandler
+* Description    : This function handles USB High Priority or CAN TX interrupts requests
+*                  requests.
+* Input          : None
+* Output         : None
+* Return         : None
+*******************************************************************************/
+void USB_HP_CAN1_TX_IRQHandler(void)
+{
+  CTR_HP();
+}
+
+/*******************************************************************************
+* Function Name  : USB_LP_CAN1_RX0_IRQHandler
+* Description    : This function handles USB Low Priority or CAN RX0 interrupts
+*                  requests.
+* Input          : None
+* Output         : None
+* Return         : None
+*******************************************************************************/
+void USB_LP_CAN1_RX0_IRQHandler(void)
+{
+  USB_Istr();
 }
 
 /******************************************************************************/
