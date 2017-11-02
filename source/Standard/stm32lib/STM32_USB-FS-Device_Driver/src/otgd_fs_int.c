@@ -20,7 +20,7 @@
 #include "usb_type.h"
 #include "otgd_fs_int.h"
 #include "usb_lib.h"
-#include "usb_istr.h"
+//#include "usb_istr.h"
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/

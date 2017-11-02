@@ -14,15 +14,15 @@
 *******************************************************************************/
 
 /* Includes ------------------------------------------------------------------*/
-#include "platform_config.h"
+#include "mass_platform_config.h"
 #include "stm32f10x.h"
 #include "mass_mal.h"
 
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
-#define     FLASH_START_ADDR        0x8020000     /* Flash start address */
-#define     FLASH_SIZE              0x20000         
+#define     FLASH_START_ADDR        0x8010000     /* Flash start address */
+#define     FLASH_SIZE              0x10000         
 #define     FLASH_PAGE_SIZE         0x800         /* 2K per page */
 #define     FLASH_WAIT_TIMEOUT      100000 
 

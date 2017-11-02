@@ -50,7 +50,7 @@
           <CreateLib>0</CreateLib>
           <CreateHexFile>1</CreateHexFile>
           <DebugInformation>1</DebugInformation>
-          <BrowseInformation>0</BrowseInformation>
+          <BrowseInformation>1</BrowseInformation>
           <ListingPath>.\build\</ListingPath>
           <HexFormatSelection>1</HexFormatSelection>
           <Merge32K>0</Merge32K>
@@ -140,11 +140,11 @@
             <RestoreFunctions>0</RestoreFunctions>
             <RestoreToolbox>1</RestoreToolbox>
             <RestoreTracepoints>0</RestoreTracepoints>
-            <RestoreSysVw>1</RestoreSysVw>
+            <RestoreSysVw>0</RestoreSysVw>
             <UsePdscDebugDescription>0</UsePdscDebugDescription>
           </Target>
           <RunDebugAfterBuild>0</RunDebugAfterBuild>
-          <TargetSelection>1</TargetSelection>
+          <TargetSelection>6</TargetSelection>
           <SimDlls>
             <CpuDll></CpuDll>
             <CpuDllArguments></CpuDllArguments>
@@ -158,7 +158,7 @@
             <PeripheralDll></PeripheralDll>
             <PeripheralDllArguments></PeripheralDllArguments>
             <InitializationFile>.\JLinkSettings.ini</InitializationFile>
-            <Driver>BIN\UL2CM3.DLL</Driver>
+            <Driver>Segger\JL2CM3.dll</Driver>
           </TargetDlls>
         </DebugOption>
         <Utilities>
@@ -362,7 +362,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_HD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>.\ucos\config;.\USB_Module\Boad_conf;.\USB_Module\CH374_lib;.\USB_Module\USB_SYS;..\module\mpu6050;..\module\5110;..\userapp;..\stm32dev;..\stm32dev\Spi;..\module\ucos\soc;..\module\ucos\config;..\stm32lib\STM32F10x_StdPeriph_Driver\inc;..\stm32lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x;..\stm32lib\CMSIS\CM3\CoreSupport;..\stm32lib\boot;..\module\leds;..\module\usb_mcuflash\inc;..\stm32lib\STM32_USB-FS-Device_Driver\inc;..\module\random</IncludePath>
+              <IncludePath>.\ucos\config;.\USB_Module\Boad_conf;.\USB_Module\CH374_lib;.\USB_Module\USB_SYS;..\module\mpu6050;..\module\5110;..\userapp;..\stm32dev;..\stm32dev\Spi;..\module\ucos\soc;..\module\ucos\config;..\stm32lib\STM32F10x_StdPeriph_Driver\inc;..\stm32lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x;..\stm32lib\CMSIS\CM3\CoreSupport;..\stm32lib\boot;..\module\leds;..\module\usb_mcuflash\inc;..\stm32lib\STM32_USB-FS-Device_Driver\inc;..\module\random;..\module;..\module\usb_devices;..\module\usb_mouse</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -730,6 +730,11 @@
               <FileType>1</FileType>
               <FilePath>..\userapp\UserappConfig.c</FilePath>
             </File>
+            <File>
+              <FileName>cpu_id.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\module\cpu_id.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -796,9 +801,9 @@
           <GroupName>module_usbflash</GroupName>
           <Files>
             <File>
-              <FileName>hw_config.c</FileName>
+              <FileName>mass_hw_config.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\module\usb_mcuflash\hw_config.c</FilePath>
+              <FilePath>..\module\usb_mcuflash\mass_hw_config.c</FilePath>
             </File>
             <File>
               <FileName>mass_mal.c</FileName>
@@ -806,9 +811,39 @@
               <FilePath>..\module\usb_mcuflash\mass_mal.c</FilePath>
             </File>
             <File>
-              <FileName>memory.c</FileName>
+              <FileName>mass_memory.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\module\usb_mcuflash\memory.c</FilePath>
+              <FilePath>..\module\usb_mcuflash\mass_memory.c</FilePath>
+            </File>
+            <File>
+              <FileName>mass_usb_bot.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\module\usb_mcuflash\mass_usb_bot.c</FilePath>
+            </File>
+            <File>
+              <FileName>mass_usb_desc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\module\usb_mcuflash\mass_usb_desc.c</FilePath>
+            </File>
+            <File>
+              <FileName>mass_usb_endp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\module\usb_mcuflash\mass_usb_endp.c</FilePath>
+            </File>
+            <File>
+              <FileName>mass_usb_istr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\module\usb_mcuflash\mass_usb_istr.c</FilePath>
+            </File>
+            <File>
+              <FileName>mass_usb_prop.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\module\usb_mcuflash\mass_usb_prop.c</FilePath>
+            </File>
+            <File>
+              <FileName>mass_usb_pwr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\module\usb_mcuflash\mass_usb_pwr.c</FilePath>
             </File>
             <File>
               <FileName>scsi_data.c</FileName>
@@ -816,44 +851,14 @@
               <FilePath>..\module\usb_mcuflash\scsi_data.c</FilePath>
             </File>
             <File>
-              <FileName>usb_bot.c</FileName>
+              <FileName>scsi_usb.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\module\usb_mcuflash\usb_bot.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_desc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\module\usb_mcuflash\usb_desc.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_endp.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\module\usb_mcuflash\usb_endp.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_istr.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\module\usb_mcuflash\usb_istr.c</FilePath>
+              <FilePath>..\module\usb_mcuflash\scsi_usb.c</FilePath>
             </File>
             <File>
               <FileName>usb_mcuflash_task.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\module\usb_mcuflash\usb_mcuflash_task.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_prop.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\module\usb_mcuflash\usb_prop.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_pwr.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\module\usb_mcuflash\usb_pwr.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_scsi.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\module\usb_mcuflash\usb_scsi.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -864,6 +869,51 @@
               <FileName>random.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\module\random\random.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>module_mouse</GroupName>
+          <Files>
+            <File>
+              <FileName>mouse_hw_config.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\module\usb_mouse\mouse_hw_config.c</FilePath>
+            </File>
+            <File>
+              <FileName>mouse_usb_desc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\module\usb_mouse\mouse_usb_desc.c</FilePath>
+            </File>
+            <File>
+              <FileName>mouse_usb_istr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\module\usb_mouse\mouse_usb_istr.c</FilePath>
+            </File>
+            <File>
+              <FileName>mouse_usb_prop.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\module\usb_mouse\mouse_usb_prop.c</FilePath>
+            </File>
+            <File>
+              <FileName>mouse_usb_pwr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\module\usb_mouse\mouse_usb_pwr.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_mouse_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\module\usb_mouse\usb_mouse_task.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>module_usbdevices</GroupName>
+          <Files>
+            <File>
+              <FileName>usb_devices.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\module\usb_devices\usb_devices.c</FilePath>
             </File>
           </Files>
         </Group>

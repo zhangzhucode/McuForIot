@@ -26,10 +26,8 @@
 #include "main.h"
 #include "ucos_ii.h"
 #include "UserappConfig.h"
-#include "usb_istr.h"
-#include "usb_lib.h"
-#include "usb_pwr.h"
-#include "platform_config.h"
+#include "usb_conf.h"
+
 /** @addtogroup STM32F10x_StdPeriph_Examples
   * @{
   */
@@ -176,13 +174,13 @@ void TIM2_IRQHandler(void)     //ÖÐ¶ÏÖÜÆÚ10ms
 		 
 
 void USB_HP_CAN1_TX_IRQHandler(void)
-		 {
-  CTR_HP();
-		 }
+{
+    USB_CTR_HP();
+}
 
 void USB_LP_CAN1_RX0_IRQHandler(void)
-		 {
-  USB_Istr();
+{
+    USB_Istr();
 }
 
 /******************************************************************************/
