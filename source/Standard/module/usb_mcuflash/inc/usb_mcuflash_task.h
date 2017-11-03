@@ -3,6 +3,6 @@
 
 #include <includes.h>	
 
-extern void USB_McuFlashTask(void *pd);
+extern void USB_McuFlashTask(void);
 
 #endif

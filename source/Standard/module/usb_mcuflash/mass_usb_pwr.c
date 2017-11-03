@@ -14,10 +14,6 @@
 *******************************************************************************/
 
 /* Includes ------------------------------------------------------------------*/
-#include "stm32f10x.h"
-#include "usb_lib.h"
-#include "mass_usb_conf.h"
-#include "mass_usb_pwr.h"
 #include "mass_hw_config.h"
 
 /* Private typedef -----------------------------------------------------------*/
@@ -94,7 +90,7 @@ RESULT Mass_PowerOff()
 }
 
 /*******************************************************************************
-* Function Name  : Suspend
+* Function Name  : Mass_Suspend
 * Description    : sets suspend mode operating conditions
 * Input          : None.
 * Output         : None.

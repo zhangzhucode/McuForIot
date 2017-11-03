@@ -14,8 +14,7 @@
 *******************************************************************************/
 
 /* Includes ------------------------------------------------------------------*/
-#include "mass_usb_scsi.h"
-#include "mass_memory.h"
+#include "mass_hw_config.h"
 
 
 uint8_t Page00_Inquiry_Data[] =

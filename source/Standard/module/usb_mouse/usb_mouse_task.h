@@ -3,7 +3,7 @@
 
 #include <includes.h>	
 
-extern void USB_MouseTask(void *pd);
+extern void USB_MouseTask(void );
 
 #endif
 

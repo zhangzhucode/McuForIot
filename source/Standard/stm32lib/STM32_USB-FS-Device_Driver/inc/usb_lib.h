@@ -24,6 +24,7 @@
 #include "usb_def.h"
 #include "usb_core.h"
 #include "usb_init.h"
+
 #ifndef STM32F10X_CL
  #include "usb_mem.h"
  #include "usb_int.h"

@@ -1,12 +1,23 @@
 
-#include "UserappConfig.h"
-#include "usb_lib.h"
-#include "mass_hw_config.h"
-#include "mass_usb_pwr.h"
-#include "mass_usb_Istr.h"
+#include "usb_conf.h"
+#include "usb_devices.h"
 
-#include "mouse_usb_Istr.h"
 __IO uint16_t wIstr;  /* ISTR register last read value */
+
+
+void USB_McuUSBTask(void *pd)
+{
+
+#ifdef CONFIG_USBMCUFLASH
+   USB_McuFlashTask();
+#endif
+#ifdef CONFIG_USBMOUSE
+     USB_MouseTask();
+#endif
+#ifdef CONFIG_USBVCOM
+    USB_VcomTask();
+#endif
+}
 
 void USB_Istr(void)
 {
@@ -15,6 +26,9 @@ void USB_Istr(void)
 	#endif
 	#ifdef CONFIG_USBMOUSE
 		Mouse_USB_Istr();
+	#endif
+    #ifdef CONFIG_USBVCOM
+		Vcom_USB_Istr();
 	#endif
 }
 

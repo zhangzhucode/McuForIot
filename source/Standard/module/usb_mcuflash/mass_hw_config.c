@@ -14,13 +14,7 @@
 *******************************************************************************/
 
 /* Includes ------------------------------------------------------------------*/
-#include "stm32f10x_it.h"
 #include "mass_hw_config.h"
-#include "mass_platform_config.h"
-#include "mass_mal.h"
-#include "mass_usb_desc.h"
-#include "mass_usb_pwr.h"
-#include "usb_lib.h"
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/

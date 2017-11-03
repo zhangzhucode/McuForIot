@@ -1,9 +1,7 @@
-#include "usb_mcuflash_task.h"
-#include "usb_lib.h"
 #include "mass_hw_config.h"
-#include "mass_usb_pwr.h"
 
-void USB_McuFlashTask(void *pd)
+
+void USB_McuFlashTask(void )
 { 
     Mass_Set_System();
     
@@ -21,3 +19,5 @@ void USB_McuFlashTask(void *pd)
         OSTimeDly(100);
 	}
 }
+
+

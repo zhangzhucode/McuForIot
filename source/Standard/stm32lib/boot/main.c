@@ -7,6 +7,7 @@
 #include <includes.h>
 #include "UserappConfig.h"
 #include "MPU6050.h"
+#include "usb_devices.h"
 /*********************PRI*****************************/
 #define MAIN_TASK_PRI      		15
 	
@@ -21,6 +22,7 @@ void  	MainTask(void *pd);
 
 int main(void)
 {
+
 	OSInit();
     OSTaskCreate(MainTask,    (void *)0,(OS_STK *)&STK_MAIN_Manage[TASK_STK_SIZE-1],  MAIN_TASK_PRI); //15
     OSStart();

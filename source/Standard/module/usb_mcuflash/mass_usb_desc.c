@@ -14,7 +14,7 @@
 *******************************************************************************/
 
 /* Includes ------------------------------------------------------------------*/
-#include "mass_usb_desc.h"
+#include "mass_hw_config.h"
 
 const uint8_t MASS_DeviceDescriptor[MASS_SIZ_DEVICE_DESC] =
   {

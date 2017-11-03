@@ -362,7 +362,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_HD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>.\ucos\config;.\USB_Module\Boad_conf;.\USB_Module\CH374_lib;.\USB_Module\USB_SYS;..\module\mpu6050;..\module\5110;..\userapp;..\stm32dev;..\stm32dev\Spi;..\module\ucos\soc;..\module\ucos\config;..\stm32lib\STM32F10x_StdPeriph_Driver\inc;..\stm32lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x;..\stm32lib\CMSIS\CM3\CoreSupport;..\stm32lib\boot;..\module\leds;..\module\usb_mcuflash\inc;..\stm32lib\STM32_USB-FS-Device_Driver\inc;..\module\random;..\module;..\module\usb_devices;..\module\usb_mouse</IncludePath>
+              <IncludePath>.\ucos\config;.\USB_Module\Boad_conf;.\USB_Module\CH374_lib;.\USB_Module\USB_SYS;..\module\mpu6050;..\module\5110;..\userapp;..\stm32dev;..\stm32dev\Spi;..\module\ucos\soc;..\module\ucos\config;..\stm32lib\STM32F10x_StdPeriph_Driver\inc;..\stm32lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x;..\stm32lib\CMSIS\CM3\CoreSupport;..\stm32lib\boot;..\module\leds;..\module\usb_mcuflash\inc;..\stm32lib\STM32_USB-FS-Device_Driver\inc;..\module\random;..\module;..\module\usb_devices;..\module\usb_mouse;..\module\usb_vcom;..\module\Queue</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -798,6 +798,26 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>module_random</GroupName>
+          <Files>
+            <File>
+              <FileName>random.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\module\random\random.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>module_usbdevices</GroupName>
+          <Files>
+            <File>
+              <FileName>usb_devices.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\module\usb_devices\usb_devices.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>module_usbflash</GroupName>
           <Files>
             <File>
@@ -863,16 +883,6 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>module_random</GroupName>
-          <Files>
-            <File>
-              <FileName>random.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\module\random\random.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
           <GroupName>module_mouse</GroupName>
           <Files>
             <File>
@@ -908,12 +918,57 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>module_usbdevices</GroupName>
+          <GroupName>module_usbvcom</GroupName>
           <Files>
             <File>
-              <FileName>usb_devices.c</FileName>
+              <FileName>usb_vcom_task.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\module\usb_devices\usb_devices.c</FilePath>
+              <FilePath>..\module\usb_vcom\usb_vcom_task.c</FilePath>
+            </File>
+            <File>
+              <FileName>vcom_hw_config.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\module\usb_vcom\vcom_hw_config.c</FilePath>
+            </File>
+            <File>
+              <FileName>vcom_usb_desc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\module\usb_vcom\vcom_usb_desc.c</FilePath>
+            </File>
+            <File>
+              <FileName>vcom_usb_endp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\module\usb_vcom\vcom_usb_endp.c</FilePath>
+            </File>
+            <File>
+              <FileName>vcom_usb_istr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\module\usb_vcom\vcom_usb_istr.c</FilePath>
+            </File>
+            <File>
+              <FileName>vcom_usb_it.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\module\usb_vcom\vcom_usb_it.c</FilePath>
+            </File>
+            <File>
+              <FileName>vcom_usb_prop.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\module\usb_vcom\vcom_usb_prop.c</FilePath>
+            </File>
+            <File>
+              <FileName>vcom_usb_pwr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\module\usb_vcom\vcom_usb_pwr.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>module_Queue</GroupName>
+          <Files>
+            <File>
+              <FileName>Queue.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\module\Queue\Queue.c</FilePath>
             </File>
           </Files>
         </Group>

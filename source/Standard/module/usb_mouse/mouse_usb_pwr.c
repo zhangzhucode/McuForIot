@@ -14,10 +14,7 @@
 *******************************************************************************/
 
 /* Includes ------------------------------------------------------------------*/
-#include "stm32f10x.h"
-#include "usb_lib.h"
-#include "mouse_usb_conf.h"
-#include "mouse_usb_pwr.h"
+
 #include "mouse_hw_config.h"
 
 /* Private typedef -----------------------------------------------------------*/
@@ -40,13 +37,13 @@ Mouse_ResumeS;
 /* Private functions ---------------------------------------------------------*/
 
 /*******************************************************************************
-* Function Name  : PowerOn
+* Function Name  : Mouse_PowerOn
 * Description    :
 * Input          : None.
 * Output         : None.
 * Return         : USB_SUCCESS.
 *******************************************************************************/
-RESULT PowerOn(void)
+RESULT Mouse_PowerOn(void)
 {
   u16 wRegVal;
 
@@ -70,13 +67,13 @@ RESULT PowerOn(void)
 }
 
 /*******************************************************************************
-* Function Name  : PowerOff
+* Function Name  : Mouse_PowerOff
 * Description    : handles switch-off conditions
 * Input          : None.
 * Output         : None.
 * Return         : USB_SUCCESS.
 *******************************************************************************/
-RESULT PowerOff()
+RESULT Mouse_PowerOff()
 {
   /* disable all ints and force USB reset */
   _SetCNTR(CNTR_FRES);
@@ -93,13 +90,13 @@ RESULT PowerOff()
 }
 
 /*******************************************************************************
-* Function Name  : Suspend
+* Function Name  : Mouese_Suspend
 * Description    : sets suspend mode operating conditions
 * Input          : None.
 * Output         : None.
 * Return         : USB_SUCCESS.
 *******************************************************************************/
-void Suspend(void)
+void Mouese_Suspend(void)
 {
   u16 wCNTR;
   /* suspend preparation */
@@ -159,7 +156,7 @@ void Mouse_Resume_Init(void)
 }
 
 /*******************************************************************************
-* Function Name  : Resume
+* Function Name  : Mouse_Resume
 * Description    : This is the state machine handling resume operations and
 *                 timing sequence. The control is based on the Resume structure
 *                 variables and on the ESOF interrupt calling this subroutine
@@ -170,7 +167,7 @@ void Mouse_Resume_Init(void)
 * Output         : None.
 * Return         : None.
 *******************************************************************************/
-void Resume(RESUME_STATE eResumeSetVal)
+void Mouse_Resume(RESUME_STATE eResumeSetVal)
 {
   u16 wCNTR;
 

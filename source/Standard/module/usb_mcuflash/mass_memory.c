@@ -14,16 +14,7 @@
 *******************************************************************************/
 
 /* Includes ------------------------------------------------------------------*/
-
-#include "mass_memory.h"
-#include "mass_usb_scsi.h"
-#include "mass_usb_bot.h"
-#include "usb_regs.h"
-#include "usb_mem.h"
-#include "usb_conf.h"
 #include "mass_hw_config.h"
-#include "mass_mal.h"
-#include "usb_lib.h"
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/

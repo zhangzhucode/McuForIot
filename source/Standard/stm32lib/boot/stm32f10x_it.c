@@ -25,8 +25,7 @@
 #include "os_cpu.h"
 #include "main.h"
 #include "ucos_ii.h"
-#include "UserappConfig.h"
-#include "usb_conf.h"
+#include "usb_devices.h"
 
 /** @addtogroup STM32F10x_StdPeriph_Examples
   * @{
@@ -183,6 +182,11 @@ void USB_LP_CAN1_RX0_IRQHandler(void)
     USB_Istr();
 }
 
+
+void USBWakeUp_IRQHandler(void)
+{
+  EXTI_ClearITPendingBit(EXTI_Line18);
+}
 /******************************************************************************/
 /*                 STM32F10x Peripherals Interrupt Handlers                   */
 /*  Add here the Interrupt Handler for the used peripheral(s) (PPP), for the  */

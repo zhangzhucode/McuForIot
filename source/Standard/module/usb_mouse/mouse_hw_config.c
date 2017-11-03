@@ -14,13 +14,8 @@
 *******************************************************************************/
 
 /* Includes ------------------------------------------------------------------*/
-#include "stm32f10x.h"
-#include "mouse_hw_config.h"
-#include "mouse_usb_desc.h"
-#include "mouse_platform_config.h"
-#include "mouse_usb_pwr.h"
-#include "usb_lib.h"
 
+#include "mouse_hw_config.h"
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
 /* Private macro -------------------------------------------------------------*/

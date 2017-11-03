@@ -18,7 +18,24 @@
 #define __HW_CONFIG_H
 
 /* Includes ------------------------------------------------------------------*/
+#include <includes.h>	
+#include "stm32f10x.h"
+#include "usb_lib.h"
 #include "usb_type.h"
+#include "platform_config.h"
+#include "usb_core.h"
+#include "usb_regs.h"
+#include "usb_mem.h"
+#include "usb_init.h"
+
+#include "mouse_usb_conf.h"
+#include "mouse_usb_desc.h"
+#include "mouse_usb_pwr.h"
+#include "mouse_usb_prop.h"
+#include "mouse_usb_pwr.h"
+#include "mouse_usb_istr.h"
+
+#include "usb_conf.h"
 
 /* Exported types ------------------------------------------------------------*/
 /* Exported constants --------------------------------------------------------*/

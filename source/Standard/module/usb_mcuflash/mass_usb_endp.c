@@ -14,10 +14,9 @@
 *******************************************************************************/
 
 /* Includes ------------------------------------------------------------------*/
-#include "usb_lib.h"
-#include "mass_usb_bot.h"
-#include "mass_usb_istr.h"
+#include "mass_hw_config.h"
 
+#ifdef CONFIG_USBMCUFLASH
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
 /* Private macro -------------------------------------------------------------*/
@@ -49,5 +48,6 @@ void EP2_OUT_Callback(void)
   Mass_Storage_Out();
 }
 
+#endif
 /******************* (C) COPYRIGHT 2010 STMicroelectronics *****END OF FILE****/
 

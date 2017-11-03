@@ -18,8 +18,28 @@
 #define __MASS_HW_CONFIG_H
 
 /* Includes ------------------------------------------------------------------*/
+#include <includes.h>	
 #include "stm32f10x.h"
+#include "platform_config.h"
+#include "usb_lib.h"
+#include "usb_core.h"
+#include "usb_regs.h"
+#include "usb_mem.h"
+#include "usb_type.h"
+#include "usb_init.h"
 
+#include "mass_usb_conf.h"
+#include "mass_mal.h"
+#include "mass_usb_desc.h"
+#include "mass_usb_pwr.h"
+#include "mass_memory.h"
+#include "mass_usb_scsi.h"
+#include "mass_usb_bot.h"
+#include "mass_usb_istr.h"
+#include "mass_nand_if.h"
+#include "mass_usb_prop.h"
+
+#include "usb_conf.h"
 /* Exported types ------------------------------------------------------------*/
 /* Exported constants --------------------------------------------------------*/
 /* Exported macro ------------------------------------------------------------*/

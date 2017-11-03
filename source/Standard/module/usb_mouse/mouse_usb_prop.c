@@ -14,15 +14,8 @@
 *******************************************************************************/
 
 /* Includes ------------------------------------------------------------------*/
-#include "usb_lib.h"
-#include <stm32f10x.h>
-#include "usb_conf.h"
-#include "mouse_usb_prop.h"
-#include "mouse_usb_desc.h"
-#include "mouse_usb_pwr.h"
-#include "mouse_hw_config.h"
-#include "UserappConfig.h"
 
+#include "mouse_hw_config.h"
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
 /* Private macro -------------------------------------------------------------*/
@@ -120,7 +113,7 @@ void Joystick_init(void)
 
   pInformation->Current_Configuration = 0;
   /* Connect the device */
-  PowerOn();
+  Mouse_PowerOn();
 
   /* Perform basic device initialization operations */
   USB_SIL_Init();

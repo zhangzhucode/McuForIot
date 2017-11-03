@@ -18,16 +18,12 @@
 #define __USB_CONF_H
 
 #include "UserappConfig.h"
-#include <mass_usb_conf.h>
 
+//#define CONFIG_USBMCUFLASH  1
+//#define CONFIG_USBMOUSE  1
+#define CONFIG_USBVCOM  1
 
-#ifdef CONFIG_USBMCUFLASH
-#include <mass_usb_conf.h>
-#endif
-
-extern void USB_Istr(void);
-extern void USB_CTR_HP(void);
-
+extern void USB_McuUSBTask(void *pd);
 #endif /*__USB_CONF_H*/
 
 /******************* (C) COPYRIGHT 2010 STMicroelectronics *****END OF FILE****/

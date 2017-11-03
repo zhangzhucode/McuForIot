@@ -14,8 +14,11 @@
 *******************************************************************************/
 
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __USB_CONF_H
-#define __USB_CONF_H
+#ifndef __MOUSE_USB_CONF_H
+#define __MOUSE_USB_CONF_H
+
+
+
 
 /* Includes ------------------------------------------------------------------*/
 /* Exported types ------------------------------------------------------------*/
@@ -75,6 +78,8 @@
 #define  EP5_OUT_Callback   NOP_Process
 #define  EP6_OUT_Callback   NOP_Process
 #define  EP7_OUT_Callback   NOP_Process
+
+
 
 #endif /*__USB_CONF_H*/
 

@@ -46,11 +46,11 @@ typedef enum _DEVICE_STATE
 /* Exported constants --------------------------------------------------------*/
 /* Exported macro ------------------------------------------------------------*/
 /* Exported functions ------------------------------------------------------- */
-void Suspend(void);
+void Mouese_Suspend(void);
 void Mouse_Resume_Init(void);
-void Resume(RESUME_STATE eResumeSetVal);
-RESULT PowerOn(void);
-RESULT PowerOff(void);
+void Mouse_Resume(RESUME_STATE eResumeSetVal);
+RESULT Mouse_PowerOn(void);
+RESULT Mouse_PowerOff(void);
 /* External variables --------------------------------------------------------*/
 extern __IO uint32_t Mouse_bDeviceState; /* USB device status */
 extern __IO FunctionalState Mouse_fSuspendEnabled;  /* true when suspend is possible */

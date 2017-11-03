@@ -1,8 +1,5 @@
 
-#include "stm32f10x.h"	
 #include "mouse_hw_config.h"
-#include "usb_lib.h"
-#include "mouse_usb_pwr.h"
 
 
 /*******************************************************************************
@@ -13,7 +10,7 @@
 * Return         : None
 * Attention		 : None
 *******************************************************************************/
-void USB_MouseTask(void *pd)
+void USB_MouseTask(void)
 {
   Mouse_Set_System();
   

@@ -14,11 +14,7 @@
 *******************************************************************************/
 
 /* Includes ------------------------------------------------------------------*/
-#include "usb_lib.h"
-#include "mouse_usb_prop.h"
-#include "mouse_usb_pwr.h"
-#include "mouse_usb_istr.h"
-#include "UserappConfig.h"
+#include "mouse_hw_config.h"
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -117,7 +113,7 @@ void Mouse_USB_Istr(void)
   if (wIstr & ISTR_WKUP & wInterrupt_Mask)
   {
     _SetISTR((uint16_t)CLR_WKUP);
-    Resume(RESUME_EXTERNAL);
+    Mouse_Resume(RESUME_EXTERNAL);
 #ifdef WKUP_CALLBACK
     WKUP_Callback();
 #endif
@@ -131,12 +127,12 @@ void Mouse_USB_Istr(void)
     /* check if SUSPEND is possible */
     if (Mouse_fSuspendEnabled)
     {
-      Suspend();
+      Mouese_Suspend();
     }
     else
     {
       /* if not possible then resume after xx ms */
-      Resume(RESUME_LATER);
+      Mouse_Resume(RESUME_LATER);
     }
     /* clear of the ISTR bit must be done after setting of CNTR_FSUSP */
     _SetISTR((uint16_t)CLR_SUSP);
@@ -163,7 +159,7 @@ void Mouse_USB_Istr(void)
   {
     _SetISTR((uint16_t)CLR_ESOF);
     /* resume handling timing is made with ESOFs */
-    Resume(RESUME_ESOF); /* request without change of the machine state */
+    Mouse_Resume(RESUME_ESOF); /* request without change of the machine state */
 
 #ifdef ESOF_CALLBACK
     ESOF_Callback();
@@ -243,12 +239,12 @@ u32 STM32_PCD_OTG_ISR_Handler (void)
       /* check if SUSPEND is possible */
       if (Mouse_fSuspendEnabled)
       {
-        Suspend();
+        Mouese_Suspend();
       }
       else
       {
         /* if not possible then resume after xx ms */
-        Resume(RESUME_LATER); /* This case shouldn't happen in OTG Device mode because 
+        Mouse_Resume(RESUME_LATER); /* This case shouldn't happen in OTG Device mode because 
         there's no ESOF interrupt to increment the ResumeS.bESOFcnt in the Resume state machine */
       }
             
