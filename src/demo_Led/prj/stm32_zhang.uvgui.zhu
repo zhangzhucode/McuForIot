@@ -1286,7 +1286,7 @@
         <Name>File</Name>
         <Buttons>
           <Len>2385</Len>
-          <Data>00200000010000002800FFFF01001100434D4643546F6F6C426172427574746F6E00E100000000000000000000000000000000000000000000000100000001000000018001E100000000000001000000000000000000000000000000000100000001000000018003E1000000000000020000000000000000000000000000000001000000010000000180CD7F0000000002000300000000000000000000000000000000010000000100000001800000000001000000FFFFFFFF000000000000000000000000000100000001000000018023E100000000040004000000000000000000000000000000000100000001000000018022E100000000040005000000000000000000000000000000000100000001000000018025E10000000000000600000000000000000000000000000000010000000100000001800000000001000000FFFFFFFF00000000000000000000000000010000000100000001802BE10000000004000700000000000000000000000000000000010000000100000001802CE10000000004000800000000000000000000000000000000010000000100000001800000000001000000FFFFFFFF00000000000000000000000000010000000100000001807A8A0000000000000900000000000000000000000000000000010000000100000001807B8A0000000004000A00000000000000000000000000000000010000000100000001800000000001000000FFFFFFFF0000000000000000000000000001000000010000000180D3B00000000000000B000000000000000000000000000000000100000001000000018015B10000000004000C0000000000000000000000000000000001000000010000000180F4B00000000004000D000000000000000000000000000000000100000001000000018036B10000000004000E00000000000000000000000000000000010000000100000001800000000001000000FFFFFFFF0000000000000000000000000001000000010000000180FF88000000000400460000000000000000000000000000000001000000010000000180FE880000000004004500000000000000000000000000000000010000000100000001800B810000000004001300000000000000000000000000000000010000000100000001800C810000000004001400000000000000000000000000000000010000000100000001800000000001000000FFFFFFFF0000000000000000000000000001000000010000000180F0880000020000000F000000000000000000000000000000000100000001000000FFFF0100120043555646696E64436F6D626F427574746F6EE803000000000000000000000000000000000000000000000001000000010000009600000002002050000000000A5553425F436F6E66696796000000000000001400165553425F46535F574B55505F49525148616E646C65721455534257616B6555705F49525148616E646C65720A5553425F436F6E6669670A5365745F53797374656D1251554555455F5061636B65744372656174650A5553425F5278526561640B5553425F527857726974650A5553425F5478526561640E434F4E4649475F55534256434F4D0E5553425F4D63755553425461736B144273705F52533233325F496E697469616C6973650B4E4D495F48616E646C6572094170704372656174650C496E74546F556E69636F64650F51554555455F5061636B65744F7574124750494F5F436F6E66696775726174696F6E0B5553425F54785772697465114D4153535F4D454D4F52595F53544152540D45534F465F43414C4C4241434B085553425F497374720000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018024E10000000000001100000000000000000000000000000000010000000100000001800A810000000000001200000000000000000000000000000000010000000100000001800000000001000000FFFFFFFF000000000000000000000000000100000001000000018022800000020000001500000000000000000000000000000000010000000100000001800000000001000000FFFFFFFF0000000000000000000000000001000000010000000180C488000000000000160000000000000000000000000000000001000000010000000180C988000000000400180000000000000000000000000000000001000000010000000180C788000000000000190000000000000000000000000000000001000000010000000180C8880000000000001700000000000000000000000000000000010000000100000001800000000001000000FFFFFFFF000000000000000000000000000100000001000000FFFF01001500434D4643546F6F6C4261724D656E75427574746F6E4C010000020001001A0000000F50726F6A6563742057696E646F7773000000000000000000000000010000000100000000000000000000000100000008002880DD880000000000001A0000000750726F6A656374000000000000000000000000010000000100000000000000000000000100000000002880DC8B0000000000003A00000005426F6F6B73000000000000000000000000010000000100000000000000000000000100000000002880E18B0000000000003B0000000946756E6374696F6E73000000000000000000000000010000000100000000000000000000000100000000002880E28B000000000000400000000954656D706C6174657300000000000000000000000001000000010000000000000000000000010000000000288018890000000000003D0000000E536F757263652042726F777365720000000000000000000000000100000001000000000000000000000001000000000028800000000000000400FFFFFFFF00000000000000000001000000000000000100000000000000000000000100000000002880D988000000000000390000000C4275696C64204F7574707574000000000000000000000000010000000100000000000000000000000100000000002880E38B000000000000410000000B46696E64204F75747075740000000000000000000000000100000001000000000000000000000001000000000001800000000001000000FFFFFFFF0000000000000000000000000001000000010000000180FB7F0000000000001B000000000000000000000000000000000100000001000000000000000446696C65AC030000</Data>
+          <Data>00200000010000002800FFFF01001100434D4643546F6F6C426172427574746F6E00E100000000000000000000000000000000000000000000000100000001000000018001E100000000000001000000000000000000000000000000000100000001000000018003E1000000000000020000000000000000000000000000000001000000010000000180CD7F0000000000000300000000000000000000000000000000010000000100000001800000000001000000FFFFFFFF000000000000000000000000000100000001000000018023E100000000040004000000000000000000000000000000000100000001000000018022E100000000040005000000000000000000000000000000000100000001000000018025E10000000000000600000000000000000000000000000000010000000100000001800000000001000000FFFFFFFF00000000000000000000000000010000000100000001802BE10000000004000700000000000000000000000000000000010000000100000001802CE10000000004000800000000000000000000000000000000010000000100000001800000000001000000FFFFFFFF00000000000000000000000000010000000100000001807A8A0000000000000900000000000000000000000000000000010000000100000001807B8A0000000004000A00000000000000000000000000000000010000000100000001800000000001000000FFFFFFFF0000000000000000000000000001000000010000000180D3B00000000000000B000000000000000000000000000000000100000001000000018015B10000000004000C0000000000000000000000000000000001000000010000000180F4B00000000004000D000000000000000000000000000000000100000001000000018036B10000000004000E00000000000000000000000000000000010000000100000001800000000001000000FFFFFFFF0000000000000000000000000001000000010000000180FF88000000000400460000000000000000000000000000000001000000010000000180FE880000000004004500000000000000000000000000000000010000000100000001800B810000000004001300000000000000000000000000000000010000000100000001800C810000000004001400000000000000000000000000000000010000000100000001800000000001000000FFFFFFFF0000000000000000000000000001000000010000000180F0880000020000000F000000000000000000000000000000000100000001000000FFFF0100120043555646696E64436F6D626F427574746F6EE803000000000000000000000000000000000000000000000001000000010000009600000002002050000000000A5553425F436F6E66696796000000000000001400165553425F46535F574B55505F49525148616E646C65721455534257616B6555705F49525148616E646C65720A5553425F436F6E6669670A5365745F53797374656D1251554555455F5061636B65744372656174650A5553425F5278526561640B5553425F527857726974650A5553425F5478526561640E434F4E4649475F55534256434F4D0E5553425F4D63755553425461736B144273705F52533233325F496E697469616C6973650B4E4D495F48616E646C6572094170704372656174650C496E74546F556E69636F64650F51554555455F5061636B65744F7574124750494F5F436F6E66696775726174696F6E0B5553425F54785772697465114D4153535F4D454D4F52595F53544152540D45534F465F43414C4C4241434B085553425F497374720000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018024E10000000000001100000000000000000000000000000000010000000100000001800A810000000000001200000000000000000000000000000000010000000100000001800000000001000000FFFFFFFF000000000000000000000000000100000001000000018022800000020000001500000000000000000000000000000000010000000100000001800000000001000000FFFFFFFF0000000000000000000000000001000000010000000180C488000000000000160000000000000000000000000000000001000000010000000180C988000000000400180000000000000000000000000000000001000000010000000180C788000000000000190000000000000000000000000000000001000000010000000180C8880000000000001700000000000000000000000000000000010000000100000001800000000001000000FFFFFFFF000000000000000000000000000100000001000000FFFF01001500434D4643546F6F6C4261724D656E75427574746F6E4C010000020001001A0000000F50726F6A6563742057696E646F7773000000000000000000000000010000000100000000000000000000000100000008002880DD880000000000001A0000000750726F6A656374000000000000000000000000010000000100000000000000000000000100000000002880DC8B0000000000003A00000005426F6F6B73000000000000000000000000010000000100000000000000000000000100000000002880E18B0000000000003B0000000946756E6374696F6E73000000000000000000000000010000000100000000000000000000000100000000002880E28B000000000000400000000954656D706C6174657300000000000000000000000001000000010000000000000000000000010000000000288018890000000000003D0000000E536F757263652042726F777365720000000000000000000000000100000001000000000000000000000001000000000028800000000000000400FFFFFFFF00000000000000000001000000000000000100000000000000000000000100000000002880D988000000000000390000000C4275696C64204F7574707574000000000000000000000000010000000100000000000000000000000100000000002880E38B000000000000410000000B46696E64204F75747075740000000000000000000000000100000001000000000000000000000001000000000001800000000001000000FFFFFFFF0000000000000000000000000001000000010000000180FB7F0000000000001B000000000000000000000000000000000100000001000000000000000446696C65AC030000</Data>
         </Buttons>
         <OriginalItems>
           <Len>1423</Len>
@@ -2580,121 +2580,121 @@
 
   <AlienFiles>
     <Doc>
-      <Name>C:\Users\zhu\Desktop\Standard\module\usb_mcuflash\inc\mass_usb_istr.h</Name>
+      <Name>C:\Users\zhu\Desktop\Standard\..\dev\usb_mcuflash\inc\mass_usb_istr.h</Name>
       <ColumnNumber>0</ColumnNumber>
       <TopLine>36</TopLine>
       <CurrentLine>37</CurrentLine>
     </Doc>
     <Doc>
-      <Name>C:\Users\zhu\Desktop\Standard\module\usb_mouse\mouse_usb_conf.h</Name>
+      <Name>C:\Users\zhu\Desktop\Standard\..\dev\usb_mouse\mouse_usb_conf.h</Name>
       <ColumnNumber>0</ColumnNumber>
       <TopLine>65</TopLine>
       <CurrentLine>66</CurrentLine>
     </Doc>
     <Doc>
-      <Name>C:\Users\zhu\Desktop\Standard\module\usb_mouse\mouse_usb_istr.h</Name>
+      <Name>C:\Users\zhu\Desktop\Standard\..\dev\usb_mouse\mouse_usb_istr.h</Name>
       <ColumnNumber>0</ColumnNumber>
       <TopLine>35</TopLine>
       <CurrentLine>36</CurrentLine>
     </Doc>
     <Doc>
-      <Name>C:\Users\zhu\Desktop\Standard\module\usb_mouse\mouse_hw_config.h</Name>
+      <Name>C:\Users\zhu\Desktop\Standard\..\dev\usb_mouse\mouse_hw_config.h</Name>
       <ColumnNumber>0</ColumnNumber>
       <TopLine>38</TopLine>
       <CurrentLine>39</CurrentLine>
     </Doc>
     <Doc>
-      <Name>C:\Users\zhu\Desktop\Standard\userapp\UserappConfig.h</Name>
+      <Name>C:\Users\zhu\Desktop\Standard\user\UserappConfig.h</Name>
       <ColumnNumber>0</ColumnNumber>
       <TopLine>3</TopLine>
       <CurrentLine>18</CurrentLine>
     </Doc>
     <Doc>
-      <Name>C:\Users\zhu\Desktop\Standard\module\usb_mcuflash\inc\mass_hw_config.h</Name>
+      <Name>C:\Users\zhu\Desktop\Standard\..\dev\usb_mcuflash\inc\mass_hw_config.h</Name>
       <ColumnNumber>0</ColumnNumber>
       <TopLine>41</TopLine>
       <CurrentLine>42</CurrentLine>
     </Doc>
     <Doc>
-      <Name>C:\Users\zhu\Desktop\Standard\module\usb_mcuflash\inc\usb_mcuflash_task.h</Name>
+      <Name>C:\Users\zhu\Desktop\Standard\..\dev\usb_mcuflash\inc\usb_mcuflash_task.h</Name>
       <ColumnNumber>0</ColumnNumber>
       <TopLine>1</TopLine>
       <CurrentLine>6</CurrentLine>
     </Doc>
     <Doc>
-      <Name>C:\Users\zhu\Desktop\Standard\module\usb_mouse\usb_mouse_task.h</Name>
+      <Name>C:\Users\zhu\Desktop\Standard\..\dev\usb_mouse\usb_mouse_task.h</Name>
       <ColumnNumber>0</ColumnNumber>
       <TopLine>1</TopLine>
       <CurrentLine>10</CurrentLine>
     </Doc>
     <Doc>
-      <Name>C:\Users\zhu\Desktop\Standard\module\usb_mcuflash\inc\mass_usb_conf.h</Name>
+      <Name>C:\Users\zhu\Desktop\Standard\..\dev\usb_mcuflash\inc\mass_usb_conf.h</Name>
       <ColumnNumber>0</ColumnNumber>
       <TopLine>1</TopLine>
       <CurrentLine>1</CurrentLine>
     </Doc>
     <Doc>
-      <Name>C:\Users\zhu\Desktop\Standard\stm32lib\boot\stm32f10x_it.h</Name>
+      <Name>C:\Users\zhu\Desktop\Standard\..\stm32lib\boot\stm32f10x_it.h</Name>
       <ColumnNumber>0</ColumnNumber>
       <TopLine>1</TopLine>
       <CurrentLine>1</CurrentLine>
     </Doc>
     <Doc>
-      <Name>C:\Users\zhu\Desktop\Standard\module\usb_vcom\usb_vcom_task.h</Name>
+      <Name>C:\Users\zhu\Desktop\Standard\..\dev\usb_vcom\usb_vcom_task.h</Name>
       <ColumnNumber>0</ColumnNumber>
       <TopLine>1</TopLine>
       <CurrentLine>1</CurrentLine>
     </Doc>
     <Doc>
-      <Name>C:\Users\zhu\Desktop\Standard\module\usb_devices\platform_config.h</Name>
+      <Name>C:\Users\zhu\Desktop\Standard\..\dev\usb_devices\platform_config.h</Name>
       <ColumnNumber>0</ColumnNumber>
       <TopLine>17</TopLine>
       <CurrentLine>18</CurrentLine>
     </Doc>
     <Doc>
-      <Name>C:\Users\zhu\Desktop\Standard\module\usb_vcom\vcom_usb_istr.h</Name>
+      <Name>C:\Users\zhu\Desktop\Standard\..\dev\usb_vcom\vcom_usb_istr.h</Name>
       <ColumnNumber>0</ColumnNumber>
       <TopLine>30</TopLine>
       <CurrentLine>31</CurrentLine>
     </Doc>
     <Doc>
-      <Name>C:\Users\zhu\Desktop\Standard\module\usb_vcom\vcom_hw_config.h</Name>
+      <Name>C:\Users\zhu\Desktop\Standard\..\dev\usb_vcom\vcom_hw_config.h</Name>
       <ColumnNumber>0</ColumnNumber>
       <TopLine>50</TopLine>
       <CurrentLine>51</CurrentLine>
     </Doc>
     <Doc>
-      <Name>C:\Users\zhu\Desktop\Standard\module\usb_devices\usb_conf.h</Name>
+      <Name>C:\Users\zhu\Desktop\Standard\..\dev\usb_devices\usb_conf.h</Name>
       <ColumnNumber>0</ColumnNumber>
       <TopLine>10</TopLine>
       <CurrentLine>24</CurrentLine>
     </Doc>
     <Doc>
-      <Name>C:\Users\zhu\Desktop\Standard\module\usb_devices\usb_devices.h</Name>
+      <Name>C:\Users\zhu\Desktop\Standard\..\dev\usb_devices\usb_devices.h</Name>
       <ColumnNumber>0</ColumnNumber>
       <TopLine>24</TopLine>
       <CurrentLine>33</CurrentLine>
     </Doc>
     <Doc>
-      <Name>C:\Users\zhu\Desktop\Standard\module\usb_vcom\vcom_usb_conf.h</Name>
+      <Name>C:\Users\zhu\Desktop\Standard\..\dev\usb_vcom\vcom_usb_conf.h</Name>
       <ColumnNumber>0</ColumnNumber>
       <TopLine>68</TopLine>
       <CurrentLine>69</CurrentLine>
     </Doc>
     <Doc>
-      <Name>C:\Users\zhu\Desktop\Standard\stm32lib\STM32F10x_StdPeriph_Driver\inc\misc.h</Name>
+      <Name>C:\Users\zhu\Desktop\Standard\..\stm32lib\STM32F10x_StdPeriph_Driver\inc\misc.h</Name>
       <ColumnNumber>0</ColumnNumber>
       <TopLine>154</TopLine>
       <CurrentLine>155</CurrentLine>
     </Doc>
     <Doc>
-      <Name>C:\Users\zhu\Desktop\Standard\module\usb_vcom\vcom_usb_pwr.h</Name>
+      <Name>C:\Users\zhu\Desktop\Standard\..\dev\usb_vcom\vcom_usb_pwr.h</Name>
       <ColumnNumber>0</ColumnNumber>
       <TopLine>52</TopLine>
       <CurrentLine>61</CurrentLine>
     </Doc>
     <Doc>
-      <Name>C:\Users\zhu\Desktop\Standard\stm32lib\STM32_USB-FS-Device_Driver\inc\usb_lib.h</Name>
+      <Name>C:\Users\zhu\Desktop\Standard\..\stm32lib\STM32_USB-FS-Device_Driver\inc\usb_lib.h</Name>
       <ColumnNumber>0</ColumnNumber>
       <TopLine>1</TopLine>
       <CurrentLine>1</CurrentLine>
@@ -2708,7 +2708,7 @@
       <Size>100</Size>
       <ActiveTab>0</ActiveTab>
       <Doc>
-        <Name>..\module\usb_vcom\usb_vcom_task.c</Name>
+        <Name>..\..\dev\usb_vcom\usb_vcom_task.c</Name>
         <ColumnNumber>4</ColumnNumber>
         <TopLine>4</TopLine>
         <CurrentLine>11</CurrentLine>
@@ -2717,7 +2717,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\stm32lib\STM32_USB-FS-Device_Driver\src\usb_init.c</Name>
+        <Name>..\..\stm32lib\STM32_USB-FS-Device_Driver\src\usb_init.c</Name>
         <ColumnNumber>0</ColumnNumber>
         <TopLine>48</TopLine>
         <CurrentLine>53</CurrentLine>
@@ -2726,7 +2726,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\module\usb_devices\usb_devices.c</Name>
+        <Name>..\..\dev\usb_devices\usb_devices.c</Name>
         <ColumnNumber>16</ColumnNumber>
         <TopLine>7</TopLine>
         <CurrentLine>18</CurrentLine>
@@ -2735,7 +2735,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\stm32lib\boot\main.c</Name>
+        <Name>..\..\stm32lib\boot\main.c</Name>
         <ColumnNumber>1</ColumnNumber>
         <TopLine>21</TopLine>
         <CurrentLine>29</CurrentLine>
@@ -2744,7 +2744,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\module\usb_vcom\vcom_hw_config.c</Name>
+        <Name>..\..\dev\usb_vcom\vcom_hw_config.c</Name>
         <ColumnNumber>12</ColumnNumber>
         <TopLine>181</TopLine>
         <CurrentLine>196</CurrentLine>
@@ -2753,7 +2753,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\stm32lib\boot\stm32f10x_it.c</Name>
+        <Name>..\..\stm32lib\boot\stm32f10x_it.c</Name>
         <ColumnNumber>31</ColumnNumber>
         <TopLine>171</TopLine>
         <CurrentLine>186</CurrentLine>
@@ -2762,7 +2762,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\stm32lib\STM32_USB-FS-Device_Driver\inc\usb_lib.h</Name>
+        <Name>..\..\stm32lib\STM32_USB-FS-Device_Driver\inc\usb_lib.h</Name>
         <ColumnNumber>0</ColumnNumber>
         <TopLine>1</TopLine>
         <CurrentLine>1</CurrentLine>
@@ -2771,7 +2771,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\module\usb_vcom\vcom_usb_endp.c</Name>
+        <Name>..\..\dev\usb_vcom\vcom_usb_endp.c</Name>
         <ColumnNumber>17</ColumnNumber>
         <TopLine>113</TopLine>
         <CurrentLine>114</CurrentLine>
@@ -2780,7 +2780,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\module\usb_vcom\vcom_usb_istr.c</Name>
+        <Name>..\..\dev\usb_vcom\vcom_usb_istr.c</Name>
         <ColumnNumber>0</ColumnNumber>
         <TopLine>44</TopLine>
         <CurrentLine>45</CurrentLine>
@@ -2789,7 +2789,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\module\usb_vcom\vcom_usb_prop.c</Name>
+        <Name>..\..\dev\usb_vcom\vcom_usb_prop.c</Name>
         <ColumnNumber>0</ColumnNumber>
         <TopLine>48</TopLine>
         <CurrentLine>49</CurrentLine>
@@ -2798,7 +2798,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\module\usb_mouse\mouse_usb_istr.c</Name>
+        <Name>..\..\dev\usb_mouse\mouse_usb_istr.c</Name>
         <ColumnNumber>0</ColumnNumber>
         <TopLine>30</TopLine>
         <CurrentLine>31</CurrentLine>
@@ -2807,7 +2807,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\module\usb_mouse\mouse_usb_prop.c</Name>
+        <Name>..\..\dev\usb_mouse\mouse_usb_prop.c</Name>
         <ColumnNumber>0</ColumnNumber>
         <TopLine>27</TopLine>
         <CurrentLine>28</CurrentLine>
@@ -2816,7 +2816,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\module\usb_mcuflash\mass_usb_prop.c</Name>
+        <Name>..\..\dev\usb_mcuflash\mass_usb_prop.c</Name>
         <ColumnNumber>0</ColumnNumber>
         <TopLine>24</TopLine>
         <CurrentLine>25</CurrentLine>
@@ -2825,7 +2825,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\module\usb_mcuflash\mass_usb_istr.c</Name>
+        <Name>..\..\dev\usb_mcuflash\mass_usb_istr.c</Name>
         <ColumnNumber>0</ColumnNumber>
         <TopLine>31</TopLine>
         <CurrentLine>32</CurrentLine>
@@ -2834,7 +2834,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\module\usb_mcuflash\mass_usb_endp.c</Name>
+        <Name>..\..\dev\usb_mcuflash\mass_usb_endp.c</Name>
         <ColumnNumber>0</ColumnNumber>
         <TopLine>18</TopLine>
         <CurrentLine>19</CurrentLine>
@@ -2843,7 +2843,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\module\Queue\Queue.c</Name>
+        <Name>..\..\dev\Queue\Queue.c</Name>
         <ColumnNumber>24</ColumnNumber>
         <TopLine>97</TopLine>
         <CurrentLine>98</CurrentLine>
@@ -2852,7 +2852,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\module\usb_vcom\vcom_usb_pwr.c</Name>
+        <Name>..\..\dev\usb_vcom\vcom_usb_pwr.c</Name>
         <ColumnNumber>18</ColumnNumber>
         <TopLine>295</TopLine>
         <CurrentLine>310</CurrentLine>
@@ -2861,7 +2861,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\module\usb_vcom\vcom_usb_pwr.h</Name>
+        <Name>..\..\dev\usb_vcom\vcom_usb_pwr.h</Name>
         <ColumnNumber>10</ColumnNumber>
         <TopLine>52</TopLine>
         <CurrentLine>61</CurrentLine>
@@ -2870,7 +2870,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\stm32lib\STM32F10x_StdPeriph_Driver\inc\misc.h</Name>
+        <Name>..\..\stm32lib\STM32F10x_StdPeriph_Driver\inc\misc.h</Name>
         <ColumnNumber>0</ColumnNumber>
         <TopLine>154</TopLine>
         <CurrentLine>155</CurrentLine>
@@ -2879,7 +2879,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\module\usb_mcuflash\mass_hw_config.c</Name>
+        <Name>..\..\dev\usb_mcuflash\mass_hw_config.c</Name>
         <ColumnNumber>24</ColumnNumber>
         <TopLine>16</TopLine>
         <CurrentLine>17</CurrentLine>
@@ -2888,7 +2888,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\module\usb_vcom\vcom_usb_conf.h</Name>
+        <Name>..\..\dev\usb_vcom\vcom_usb_conf.h</Name>
         <ColumnNumber>0</ColumnNumber>
         <TopLine>68</TopLine>
         <CurrentLine>69</CurrentLine>
@@ -2897,7 +2897,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\userapp\UserappConfig.c</Name>
+        <Name>..\user\UserappConfig.c</Name>
         <ColumnNumber>0</ColumnNumber>
         <TopLine>55</TopLine>
         <CurrentLine>68</CurrentLine>
@@ -2906,7 +2906,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\module\usb_devices\usb_devices.h</Name>
+        <Name>..\..\dev\usb_devices\usb_devices.h</Name>
         <ColumnNumber>0</ColumnNumber>
         <TopLine>24</TopLine>
         <CurrentLine>33</CurrentLine>
@@ -2915,7 +2915,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\module\usb_devices\usb_conf.h</Name>
+        <Name>..\..\dev\usb_devices\usb_conf.h</Name>
         <ColumnNumber>22</ColumnNumber>
         <TopLine>10</TopLine>
         <CurrentLine>24</CurrentLine>
@@ -2924,7 +2924,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\module\usb_vcom\vcom_hw_config.h</Name>
+        <Name>..\..\dev\usb_vcom\vcom_hw_config.h</Name>
         <ColumnNumber>18</ColumnNumber>
         <TopLine>50</TopLine>
         <CurrentLine>51</CurrentLine>
@@ -2933,7 +2933,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\module\usb_vcom\vcom_usb_istr.h</Name>
+        <Name>..\..\dev\usb_vcom\vcom_usb_istr.h</Name>
         <ColumnNumber>0</ColumnNumber>
         <TopLine>30</TopLine>
         <CurrentLine>31</CurrentLine>
@@ -2942,7 +2942,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\module\usb_devices\platform_config.h</Name>
+        <Name>..\..\dev\usb_devices\platform_config.h</Name>
         <ColumnNumber>27</ColumnNumber>
         <TopLine>17</TopLine>
         <CurrentLine>18</CurrentLine>
@@ -2951,7 +2951,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\module\usb_mcuflash\usb_mcuflash_task.c</Name>
+        <Name>..\..\dev\usb_mcuflash\usb_mcuflash_task.c</Name>
         <ColumnNumber>0</ColumnNumber>
         <TopLine>1</TopLine>
         <CurrentLine>1</CurrentLine>
@@ -2960,7 +2960,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\module\usb_vcom\usb_vcom_task.h</Name>
+        <Name>..\..\dev\usb_vcom\usb_vcom_task.h</Name>
         <ColumnNumber>0</ColumnNumber>
         <TopLine>1</TopLine>
         <CurrentLine>1</CurrentLine>
@@ -2969,7 +2969,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\module\usb_mouse\usb_mouse_task.c</Name>
+        <Name>..\..\dev\usb_mouse\usb_mouse_task.c</Name>
         <ColumnNumber>20</ColumnNumber>
         <TopLine>18</TopLine>
         <CurrentLine>19</CurrentLine>
@@ -2978,7 +2978,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\module\usb_mouse\mouse_hw_config.c</Name>
+        <Name>..\..\dev\usb_mouse\mouse_hw_config.c</Name>
         <ColumnNumber>0</ColumnNumber>
         <TopLine>17</TopLine>
         <CurrentLine>18</CurrentLine>
@@ -2987,7 +2987,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\stm32lib\boot\stm32f10x_it.h</Name>
+        <Name>..\..\stm32lib\boot\stm32f10x_it.h</Name>
         <ColumnNumber>0</ColumnNumber>
         <TopLine>1</TopLine>
         <CurrentLine>1</CurrentLine>
@@ -2996,7 +2996,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\module\usb_mcuflash\inc\mass_usb_conf.h</Name>
+        <Name>..\..\dev\usb_mcuflash\inc\mass_usb_conf.h</Name>
         <ColumnNumber>0</ColumnNumber>
         <TopLine>1</TopLine>
         <CurrentLine>1</CurrentLine>
@@ -3005,7 +3005,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\module\usb_vcom\vcom_usb_desc.c</Name>
+        <Name>..\..\dev\usb_vcom\vcom_usb_desc.c</Name>
         <ColumnNumber>24</ColumnNumber>
         <TopLine>29</TopLine>
         <CurrentLine>30</CurrentLine>
@@ -3014,7 +3014,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>C:\Users\zhu\Desktop\Standard\module\usb_mouse\usb_mouse_task.h</Name>
+        <Name>C:\Users\zhu\Desktop\Standard\..\dev\usb_mouse\usb_mouse_task.h</Name>
         <ColumnNumber>0</ColumnNumber>
         <TopLine>1</TopLine>
         <CurrentLine>10</CurrentLine>
@@ -3023,7 +3023,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>C:\Users\zhu\Desktop\Standard\module\usb_mcuflash\inc\usb_mcuflash_task.h</Name>
+        <Name>C:\Users\zhu\Desktop\Standard\..\dev\usb_mcuflash\inc\usb_mcuflash_task.h</Name>
         <ColumnNumber>28</ColumnNumber>
         <TopLine>1</TopLine>
         <CurrentLine>6</CurrentLine>
@@ -3032,7 +3032,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\stm32lib\STM32_USB-FS-Device_Driver\src\usb_sil.c</Name>
+        <Name>..\..\stm32lib\STM32_USB-FS-Device_Driver\src\usb_sil.c</Name>
         <ColumnNumber>0</ColumnNumber>
         <TopLine>1</TopLine>
         <CurrentLine>1</CurrentLine>
@@ -3041,7 +3041,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\module\usb_mcuflash\inc\mass_hw_config.h</Name>
+        <Name>..\..\dev\usb_mcuflash\inc\mass_hw_config.h</Name>
         <ColumnNumber>21</ColumnNumber>
         <TopLine>41</TopLine>
         <CurrentLine>42</CurrentLine>
@@ -3050,7 +3050,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\userapp\UserappConfig.h</Name>
+        <Name>..\user\UserappConfig.h</Name>
         <ColumnNumber>0</ColumnNumber>
         <TopLine>3</TopLine>
         <CurrentLine>18</CurrentLine>
@@ -3059,7 +3059,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\module\usb_mouse\mouse_hw_config.h</Name>
+        <Name>..\..\dev\usb_mouse\mouse_hw_config.h</Name>
         <ColumnNumber>0</ColumnNumber>
         <TopLine>38</TopLine>
         <CurrentLine>39</CurrentLine>
@@ -3068,7 +3068,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\stm32lib\STM32_USB-FS-Device_Driver\src\usb_int.c</Name>
+        <Name>..\..\stm32lib\STM32_USB-FS-Device_Driver\src\usb_int.c</Name>
         <ColumnNumber>0</ColumnNumber>
         <TopLine>1</TopLine>
         <CurrentLine>1</CurrentLine>
@@ -3077,7 +3077,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\stm32lib\STM32_USB-FS-Device_Driver\src\otgd_fs_int.c</Name>
+        <Name>..\..\stm32lib\STM32_USB-FS-Device_Driver\src\otgd_fs_int.c</Name>
         <ColumnNumber>0</ColumnNumber>
         <TopLine>447</TopLine>
         <CurrentLine>448</CurrentLine>
@@ -3086,7 +3086,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\module\usb_mouse\mouse_usb_istr.h</Name>
+        <Name>..\..\dev\usb_mouse\mouse_usb_istr.h</Name>
         <ColumnNumber>0</ColumnNumber>
         <TopLine>35</TopLine>
         <CurrentLine>36</CurrentLine>
@@ -3095,7 +3095,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\module\usb_mouse\mouse_usb_conf.h</Name>
+        <Name>..\..\dev\usb_mouse\mouse_usb_conf.h</Name>
         <ColumnNumber>24</ColumnNumber>
         <TopLine>65</TopLine>
         <CurrentLine>66</CurrentLine>
@@ -3104,7 +3104,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\module\usb_mcuflash\inc\mass_usb_istr.h</Name>
+        <Name>..\..\dev\usb_mcuflash\inc\mass_usb_istr.h</Name>
         <ColumnNumber>0</ColumnNumber>
         <TopLine>36</TopLine>
         <CurrentLine>37</CurrentLine>
