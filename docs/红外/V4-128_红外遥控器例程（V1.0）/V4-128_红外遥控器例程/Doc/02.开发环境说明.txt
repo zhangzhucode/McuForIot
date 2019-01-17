@@ -1,0 +1,257 @@
+/*
+*********************************************************************************************************
+*
+*	                          【安富莱】STM32-V4 开发板-开发环境说明
+*
+*	最后更新日期：2015-08-30
+*
+*	推荐将编辑器的缩进参数和TAB设置为4 来阅读本文件
+*
+*********************************************************************************************************
+*/
+
+【1】CPU内部资源
+	CPU型号        : STM32F103ZET6 / LQFP-144 / ARM 32-bit Cortex-M3
+	主频           : 72MHz
+	内部Flash容量  : 512KB
+	内部SRAM容量   : 64KB
+	定时器         : 11个
+	UART           : 5个
+	SPI            : 3个 (2个可复用为I2S)
+	I2C            : 2个
+	ADC            : 3个独立的12位ADC
+	DAC            : 2路独立12位DAC
+	CAN            : 1个 CAN 2.0B
+	SDIO           : 1个
+	USB            : USB2.0全速(从)无需外部PHY。
+
+【2】FSMC存储器地址分配
+   	CPU内部 FLASH  【0x0800 0000 - 0x080F FFFF】,容量512K(0x80000)字节
+	CPU内部 SRAM1  【0x2000 0000 - 0x2000 FFFF】,容量64K(0x10000)字节
+	
+	外部 NOR Flash 【0x6400 0000 - 0x64FF FFFF】,容量16M(0x1000000)字节
+	外部 SRAM      【0x6800 0000 - 0x681F FFFF】,容量1M(0x100000)字节
+	DM9000A芯片地址【0x6C10 0000,  0x6C10 0008】, 仅占用2个端口地址
+	TFT LCD地址    【0x6C00 0000,  0x6C00 0002】, 仅占用2个端口地址
+	OLED地址       【0x6C20 0000,  0x6C20 0002】, 仅占用2个端口地址
+	外部 NAND Flash【0x7000 0000】, 容量128M(0xC800000)字节
+
+
+【3】I2C总线外设地址分配
+  序号	器件                      地址
+	1	串行EEPROM  AT24C128 	  0xA0
+	2	音频CODEC芯片WM8978	      0x34
+	3	FM收音机Si4704            0x22
+	4	陀螺仪 MPU-6050           0xD0
+	5	光照度传感器 BH1750FVI    0x46
+	6	大气压 BMP180             0xEE
+	7	磁力计HMC5883L            0x3C  【外置的模块，选配】
+
+【4】开发工具
+    【仿真器】 --- 非标配，单独选购
+	虽然STM32支持串口ISP下载程序，但是不支持在线调试。使用串口下载，开发效率极低，因此强烈推荐购买一个仿真器，提高开发效率。
+	- ST-LINK V2 仿真器: ST公司开发的仿真器，可以下载程序和调试跟踪程序。支持STM8和STM32。一般用来开发STM8S。如果开发
+	  STM32的话， 还是建议购买J-Link仿真器
+	- J-LINK V8,V9仿真器 : Segger公司开发的仿真器，可以下载程序和调试跟踪程序。支持所有ARM系列。
+
+    【USB转RS232串口线】--- 开发板配送
+	- 现在大多数PC机都没有硬件串口了。但是对于单片机串口还是很有用的。安富莱的很多例程都需要通过串口打印调试信息。
+	- 开发板配送了一根HL-340型号的USB转RS232线。支持WIN XP, WIN7， WIN8 系统。
+
+    【开发软件】
+	- 编译环境 IAR EWARMv6 和 KEIL 的 MDK uV4。请按需选择，如都不熟悉，推荐使用KEIL MDK (uV4)。
+	- SecureCRT : 一个优秀的功能强大的超级终端工具，主要用来显示开发板从串口打印出来的信息
+	- UltraEdit : 一个优秀的源代码编辑工具
+	- SourceInsight : 一个优秀的源代码浏览工具
+
+【5】编译和调试方法
+  说明：安富莱的例程均提供 KEIL 和 IAR两种工程，每个工程中设置了2个Target，一个是在Flash巡行的，一个是在CpuRAM运行的。请按需要选择。
+  如果需要不修改Flash中的程序调试新的例程，可以选择在CPU RAM运行。
+  >>>> 有些程序（比如出厂测试程序）体积很大，无法在有限的RAM空间执行。
+
+	【Keil MDK】V4.54
+		- 执行菜单 Project -> Open project                 打开 \Project\MDK-ARM(uV4)\project.uvproj （这是工程文件）
+ 		- 执行菜单 Project -> Rebuild all target files     重新编译所有的文件:
+ 		- 执行菜单 Debug->Start/Stop Debug Session (Ctrl+F5)  启动调试:
+
+ 		【备注1】选择在CPU RAM运行时，不能使用Load按钮下载程序，请直接Start Debug即可。因为Load按钮是专门用于下载到Flash的。
+ 		【备注2】对于Keil MDK，为了避免中文字符串告警，需要在C/C++编译选项中增加 --diag_suppress=870 参数。
+		【备注3】为了提高编译效率。我们缺省关闭了工程设置 Output - Browse Information。因此无法使用鼠标右键查找函数定义。
+				  如果你需要这个功能，请打开这个选项开关。
+
+	【IAR EWARM】V6.30
+		- 执行菜单 File -> Open Workspace          (打开工程文件: Project\EWARMv6\Project.www)
+ 		- 执行菜单 Project -> Rebuild All          (重新编译整个工程)
+ 		- 执行菜单 Project -> Download and Debug(Ctrl+D)   (装载程序并启动调试)
+
+【6】例程文件夹说明
+├─Libraries :  存放第3方提供的库或其源代码，这些代码一般是成熟的并经过验证的代码。
+│  ├─CMSIS :  CMSIS是ARM公司与多家不同的芯片和软件供应商一起紧密合作定义的，提供了内核与外设、实时操作系统和中间设备之间的通用接口。
+│  ├─STM32F10x_StdPeriph_Driver : STM32F10X系列MCU的标准固件库源代码
+│  └─STM32_USB-FS-Device_Driver : USB Device Library
+│
+├─User      :  这里存放用户自己编写的源代码
+│  ├─bsp    :  板级支持包（Board Surport Packet），也就是硬件底层驱动程序. 该层介于固件库和应用程序之间。
+│  └─fonts  :  存放点阵字库常量数组
+│
+└─project   :  这里存放各类开发工具的工程文件，编译过程中的临时文件和最终HEX文件都放在此文件夹
+    ├─MDK-ARM(uV4) : KEIL公司MDK uVision 4工程文件夹
+    └─EWARMv6 : IAR公司的EWARM 工程文件夹
+
+【7】工程中源代码分组说明
+└─Flash               : Target名称，Flash 或 CpuRAM
+   ├─USER             : 存放 main.c 以及用户用用程序
+   ├─BSP              : 板级支持包（Board Support Packet）,存放硬件底层驱动文件
+   ├─CMSIS            : 仅存放CMSISI接口文件 system_stm32f4xx.c
+   ├─StdPeriph_Drivers: 存放STM328S系列MCU的固件库源代码
+   ├─MDK-ARM          : 启动文件（汇编源程序）,对于IAR是 EWARMv6
+   └─Doc              : 存放一些文档，仅限txt文件
+
+【8】公共源代码文件说明
+	- main.c          : 用户主程序，存放main()函数的文件
+	- stm32f1xx_it.c  : 集中存放中断服务程序 【除了几个异常中断外，我们建议其他的ISR放到各自的模块中】
+	- stm32f10x_assert.c : 存放断言函数   （一般无需更改）
+	- bsp.c           : 底层硬件驱动程序的主程序（包含硬件初始化入口函数）
+	- 清除目标文件(用于打包备份).bat : 执行这个程序会删除OBJ,LIST文件，方便对源代码进行压缩打包。
+
+【9】C编译器中的预定义宏 （在工程设置中更改）
+	USE_STDPERIPH_DRIVER  - 增加这个符号表示使用ST公司的标准外设库
+	VECT_TAB_SRAM         - 增加这个符号表示中断向量表定位在CPU内部RAM （针对在CPU内部RAM运行的工程才需要添加）
+
+【10】调整堆和栈的容量
+	对于KEIL MDK, 设置堆和栈的大小是通过修改启动文件start_stm32f10x_hd.s 文件实现的，比如：
+		Stack_Size      EQU     0x00008000
+		Heap_Size       EQU     0x00000400
+
+	对于IAR EWARM, 直接在工程设置中进行修改即可
+		- 菜单 project -> options -> 选择Linker -> Config页 -> 点Edit按钮 -> 切换到CSTACK/HEAP
+		比如：
+			CSTACK = 0x8000
+			HEAP   = 0x400		
+
+【11】输出目标文件
+	在 project 下面，有编译好的 hex 文件，用户可以用仿真器直接下载 output(flash).hex 到CPU内部flash	
+	\Project\output(mdk).hex - 采用KEIL MDK编译好的文件，定位在CPU 内部Flash	
+	\Project\output(iar).hex - 采用IAR编译好的文件，定位在CPU 内部Flash	
+	\Project\MDK-ARM(uV4)\Flash\List\output.map  - 这是编译链接文件，文本格式，可以查看每个函数、变量的地址和空间分配情况。
+
+【附录1】 STM32-V4开发板 GPIO分配表
+  按GPIO次序排列, 一共140个GPIO。GPIOA – GPIOH 每组16根，GPIOI 只有12根。
+    PA0/WKUP                                    WKUP按钮 -- K1按键
+    PA1/DM9000AE_INT                            以太网芯片DM9000AE中断
+    PA2/USART2_TX                               串口2发送
+    PA3/USART2_RX                               串口2接收，可外接GPRS模块
+    PA4/DAC_OU                                  DAC1输出
+    PA5/SPI1_SCK						        SPI总线时钟/DAC2输出
+    PA6/SPI1_MISO                               SPI总线MISO
+    PA7/SPI1_MOSI                               SPI总线MOSI
+    PA8/IR_TX                                   蜂鸣器
+    PA9/USART1_TX                               串口1发送（RS232）
+    PA10/USART1_RX                              串口1接收（RS232）
+    PA11/USBDM                                  全速(12Mbps)USB接口数据线D-
+    PA12/USBDP                                  全速(12Mbps)USB接口数据线D+
+    PA13/JTMS-SWDIO                             SWD调试接口数据线
+    PA14/JTCK-SWCLK                             SWD调试接口时钟线
+    PA15/ESP8266_GPIO2                          串口WIFI模块控制IO
+
+    PB0/IR_RX                                   红外遥控接收管
+    PB1/LCD_PWM                                 LCD背光控制（对于RA8875屏无用，背光由RA8875控制）
+    PB2-BOOT1/RS485_TXEN                        RS485发送使能
+    PB3/NRF24L01_CE                             NRF24L01使能
+    PB4/TRST/GPRS_TERM_ON                       串口WIFI电源管理/GPRS模块开机信号
+    PB5/TP_BUSY/VS1053_DREQ                     触摸屏BUSY/VS1053B的是否接收数据请求
+    PB6/I2C1_SCL                                I2C1串行时钟控制
+    PB7/I2C1_SDA                                I2C1串行数据控制
+    PB8/CANRX                                   CAN接收
+    PB9/CANTX                                   CAN发送
+    PB10/USART3_TX                              串口3发送，接RS485收发芯片
+    PB11/USART3_RX                              串口3接收，接RS485收发芯片
+    PB12/I2S2_WS                                I2S数字音频接口声道选择信号
+    PB13/I2S2_CK                                I2S数字音频接口时钟信号
+    PB14/USB_PULLUPENBLE                        USB上拉使能
+    PB15/I2S2_SD                                WM8978录音
+
+    PC0/ADC123_IN10                             ADC输入 - 接示波器通道1
+    PC1/ADC123_IN11                             ADC输入 - 接示波器通道2
+    PC2/ ADC123_IN12/GPRS_RESET                 ADC输入/ESP8266外部硬件复位
+    PC3/ ADC123_IN13/NRF24L01_CSN               ADC输入/NRF24L01片选信号选择                 ）
+    PC4/ ADC12_IN14                             可调电阻ADC测试
+    PC5/ TP_INT                                 触摸笔中断（RA8875中断）
+    PC6/I2S2_MCK                                I2S数字音频接口时钟源
+    PC7/ SD_INSERT                              SD卡插入检测
+    PC8/SDIO_D0                                 SDIO数据线D0
+    PC9/SDIO_D1                                 SDIO数据线D1
+    PC10/SDIO_D2                                SDIO数据线D2
+    PC11/SDIO_D3                                SDIO数据线D3
+    PC12/SDIO_CK                                SDIO时钟
+    PC13/TAMPER                                 K1按键/侵入测试/PS/2时钟控制
+    PC14-OSC32_IN                               32768Hz时钟输入
+    PC15-OSC32_OUT                              32768Hz时钟输出
+
+    PD0/ FSMC_D2                                FSMC数据总线D2
+    PD1/FSMC_D3                                 FSMC数据总线D3
+    PD2/SDIO_CMD                                SDIO命令
+    PD3/JOY_D                                   摇杆下键
+    PD4/FSMC_NOE                                FSMC控制总线读信号（N表示低有效，OE = Output Enable）
+    PD5/FSMC_NWE                                FSMC控制总线写信号（N表示低有效，WE = Write Enable）
+    PD6/FSMC_NWAIT                              FSMC总线等待信号
+    PD7/FSMC_NCE2                               FSMC片选NCE2
+    PD8/FSMC_D13                                FSMC数据总线D13
+    PD9/FSMC_D14                                FSMC数据总线D14
+    PD10/FSMC_D15                               FSMC数据总线D15
+    PD11/FSMC_A16                               FSMC地址总线A16
+    PD12/FSMC_A17                               FSMC地址总线A17
+    PD13/FSMC_A18                               FSMC地址总线A18
+    PD14/FSMC_D0                                FSMC数据总线D0
+    PD15/FSMC_D1                                FSMC数据总线D1
+
+    PE0/FSMC_NBL0                               FSMC字节选择信号，用于SRAM
+    PE1/FSMC_NBL1                               FSMC字节选择信号，用于SRAM
+    PE2/CH376T_INT                              CH376T芯片的中断信号
+    PE3/FSMC_A19                                FSMC地址总线A19
+    PE4/FSMC_A20                                FSMC地址总线A20
+    PE5/FSMC_A21                                FSMC地址总线A21
+    PE6/FSMC_A22                                FSMC地址总线A22
+    PE7/FSMC_D4                                 FSMC数据总线D4
+    PE8/FSMC_D5                                 FSMC数据总线D5
+    PE9/FSMC_D6                                 FSMC数据总线D6
+    PE10/FSMC_D7                                FSMC数据总线D7
+    PE11/FSMC_D8                                FSMC数据总线D8
+    PE12/FSMC_D9                                FSMC数据总线D9
+    PE13/FSMC_D10                               FSMC数据总线D10
+    PE14/FSMC_D11                               FSMC数据总线D11
+    PE15/FSMC_D12                               FSMC数据总线D12
+
+    PF0/FSMC_A0                                 FSMC地址总线A0
+    PF1/FSMC_A1                                 FSMC地址总线A1
+    PF2/FSMC_A2                                 FSMC地址总线A2
+    PF3/FSMC_A3                                 FSMC地址总线A3
+    PF4/FSMC_A4                                 FSMC地址总线A4
+    PF5/FSMC_A5                                 FSMC地址总线A5
+    PF6/MPU-6050_INT/NRF24L01_IRQ               SPI插座 (NRF24L01 / MPU-6050的中断)
+    PF7/ESP8266_GPIO0/LED2                     	ESP8266工作选择状态/LED2复用
+    PF8/VS1053B_XDCS/LED3                       VS1053B数据片选/LED3复用
+    PF9/VS1053B_XCS/LED4                        VS1053B片选输入信号/LED4复用 
+    PF10/CH376T_SCS                             CH376T SPI片选
+    PF11/SF_CS/LED1                             控制串行Flash片选/LED1复用
+    PF12/FSMC_A6                                FSMC地址总线A6
+    PF13/FSMC_A7                                FSMC地址总线A7
+    PF14/FSMC_A8                                FSMC地址总线A8
+    PF15/FSMC_A9                                FSMC地址总线A
+    
+    PG0/FSMC_A10                                FSMC地址总线A10
+    PG1/FSMC_A11                                FSMC地址总线A11
+    PG2/FSMC_A12                                FSMC地址总线A12
+    PG3/FSMC_A13                                FSMC地址总线A13
+    PG4/FSMC_A14                                FSMC地址总线A14
+    PG5/FSMC_A15                                FSMC地址总线A15
+    PG6/FSMC_INT2                               NAND Flash忙信号
+    PG7/JOY_OK                                  摇杆OK键
+    PG8/PS/2_DATA/DS18B20_DQ                    PS/2接口/DS18B20数据线
+    PG9/FSMC_NE2                                FSMC总线片选NE2
+    PG10/FSMC_NE3                               FSMC总线片选NE3
+    PG11/TP_NCS                                 3.5寸屏触摸芯片的片选或RA8875屏SPI接口的片选
+    PG12/FSMC_NE4                               FSMC总线片选NE4
+    PG13/JOY_R                                  摇杆右键
+    PG14/JOY_L                                  摇杆左键
+	PG15/JOY_U                                  摇杆上键
