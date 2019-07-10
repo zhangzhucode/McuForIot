@@ -385,7 +385,7 @@ int led_set_dev(leds_frame led)
     unsigned char val;
     
     OSTimeDly(10);
-    val = get_random();
+//    val = get_random();
     
     for(i=0;i<led.length;i++)
     {
@@ -411,7 +411,7 @@ void LedsTask(void *pd)
     while(1)
 	{
         OSTimeDly(10);
-        ret = get_random();
+//        ret = get_random();
         ret = ret%LEDS_NUM_TATAL;
         led_set_dev(leds[ret]);
         
