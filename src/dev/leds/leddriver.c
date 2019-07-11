@@ -1,6 +1,5 @@
 
 #include <includes.h>	
-#include "DriverConfig.h"
 #include "leddriver.h"
 
 void leds_gpio_init(void);
